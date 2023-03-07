@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="imageLogo-wrapper">
+            <div class="leafLogo-wrapper">
+                <img src="img/leafLogo.jpg" alt="Sign up logo image" class="image1">
+            </div>
+            <div class="innerLogoImg-wrapper">
+                <img src="img/odin-lined.png" alt="Odin Logo image" class="image2">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <section class="first-section">
+                <h3>This is not a real online service! You know you need something like this in your life to help your deepest dreams.
+                </h3>
+                <h3>Sign up <em>now</em> to get started.</h3>
+                <h3>
+                    You <em>know</em> you want to.
+                </h3>
+            </section>
+            <form action="https://formspree.io/f/mrgvkjbq"
+            method="POST">
+                <h3>Let's do this!</h3>
+                <div class="formInput-wrapper">
+                    <div class="formLeft">
+                        <p>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="firstName" id="first_name" required>
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="lastName" id="last_name" required>
+                        </p>
+                        <p>
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" name="userEmail" id="user_email" required>
+                        </p>
+                    </div>
+                    <div class="formRight">
+                        <p>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="userNo" id="phone_number" pattern="[0-9]{10}">
+                        </p>
+                        <p>
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" name="userPassword" id="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        </p>
+                        <p>
+                            <label for="validate_password">CONFRIM PASSWORD</label>
+                            <input type="password" name="validatePassword" id="validate_password" required>
+                        </p>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <section>
+                <p>Already have an account? <span><a href="#">Log in</a></span></p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
